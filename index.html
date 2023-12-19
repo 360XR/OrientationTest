@@ -117,17 +117,6 @@
 
       document.body.appendChild(script);
 
-	  let portrait = window.matchMedia("(orientation: portrait)");
-
-				portrait.addEventListener("change", function(e) {
-				if(e.matches) {
-					unityInstance.SendMessage('example', 'setOrientation', 'portrait');
-				} else {
-					unityInstance.SendMessage('example', 'setOrientation', 'lanscape');
-				}
-})
-
-
     </script>
   </body>
 </html>
